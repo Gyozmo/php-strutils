@@ -1,0 +1,16 @@
+{
+    "name": "root/php-strutils",
+    "authors": [
+        {
+            "name": "Gyozmo",
+            "email": "binantguillaume@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
+    },
+    "scripts": {
+        "test":"./vendor/bin/phpunit --bootstrap vendor/autoload.php ./test/Test"
+    }
+}

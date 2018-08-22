@@ -15,6 +15,12 @@ class Mytest extends TestCase{
         $this->assertClassHasAttribute('_str',strUtils::class);
     }
 
-    
+    public function testisbold(){
+        $isItBold = new strUtils('this is a test');
+        $this->assertEquals('<strong>this is a test</strong>', $isItBold->bold());
+
+    }
+
+
 }
 ?>

@@ -24,7 +24,19 @@
 
      public function bold()
      {
-         return $this ->_str;
+         return "<strong>".$this ->_str."</strong>";
+     }
+     public function underline()
+     {
+         return "<u>".$this ->_str."</u>";
+     }
+     public function italic()
+     {
+         return "<i>".$this ->_str."</i>";
+     }
+     public function uglify()
+     {
+         return "<strong><u><i>".$this ->_str."</i></u></strong>";
      }
 
     }

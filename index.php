@@ -11,24 +11,20 @@
 <body>
 <h1>PHP strutils</h1>
     <?php
-
     //autoload 
-    function chargerClasse($classe)
+    // function chargerClasse($classe)
+// {
+//   require $classe . '.php'; // On inclut la classe correspondante au paramètre passé.
+// }
+// spl_autoload_register('chargerClasse'); // On enregistre la fonction en autoload pour qu'elle soit appelée dès qu'on instanciera une classe non déclarée.
 
-{
+    require 'strutils.php';
+    $newstr = new strUtils("Ma phrase modifiée");
 
-  require $classe . '.php'; // On inclut la classe correspondante au paramètre passé.
-
-}
-
-
-spl_autoload_register('chargerClasse'); // On enregistre la fonction en autoload pour qu'elle soit appelée dès qu'on instanciera une classe non déclarée.
-
-    // require 'strutils.php';
-
-    $newstr = new strUtils("ceci est un str");
-
-    echo $newstr -> bold("test");
+    echo $newstr -> bold()."<br>";
+    echo $newstr -> italic()."<br>";
+    echo $newstr -> underline()."<br>";
+    echo $newstr -> uglify()."<br>";
 
     ?>
 </body>
